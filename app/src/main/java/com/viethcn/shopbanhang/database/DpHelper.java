@@ -13,9 +13,11 @@ public class DpHelper extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
 
-        //THUTHU(matt text, hoten text, matkhau text)
+        //ThuThu(matt text, hoten text, matkhau text)
         String dbThuThu = "create table THUTHU(matt text primary key, hoten text, matkhau text)";
         db.execSQL(dbThuThu) ;
+
+        //ThanhVien(matv integer primary key autoincrement, hoten text, namsinh text )
         String dbThanhVien = "create table THANHVIEN(matv integer primary key autoincrement, hoten text, namsinh text )";
         db.execSQL(dbThanhVien);
 
