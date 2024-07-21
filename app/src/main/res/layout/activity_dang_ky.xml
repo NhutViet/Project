@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:padding="10dp"
+    tools:context=".DangKy">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SIGN UP"
+        android:textSize="40sp"
+        android:gravity="center"
+        android:layout_marginBottom="50dp"/>
+
+
+    <EditText
+        android:id="@+id/edtUseName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textColorHint="#000"
+        android:background="@drawable/custom_button"
+        android:hint="Nhâp UseName" />
+
+
+    <EditText
+        android:id="@+id/edtPassWord"
+        android:textSize="20dp"
+        android:textColorHint="#000"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:background="@drawable/custom_button"
+        android:hint="Nhâp PassWord" />
+
+
+    <EditText
+        android:id="@+id/edRePass"
+        android:textSize="20dp"
+        android:textColorHint="#000"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/custom_button"
+        android:hint="Nhâp lại PassWord" />
+
+
+    <EditText
+        android:id="@+id/edtFullName"
+        android:textSize="20dp"
+        android:textColorHint="#000"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_button"
+        android:hint="Nhập họ tên" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp">
+        <Button
+            android:id="@+id/btnDangKy"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="SIGN UP"
+            android:textColor="@color/black"
+            android:background="@drawable/custom_button"
+            app:backgroundTint="@null"
+            android:textSize="24sp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:textAllCaps="true"/>
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            android:textColor="@color/black"
+            android:background="@drawable/custom_button"
+            app:backgroundTint="@null"
+            android:textSize="24sp"
+            android:layout_marginTop="10dp"
+            android:textAllCaps="true"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
