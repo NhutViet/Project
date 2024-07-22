@@ -31,7 +31,6 @@ public class QuanLyPhieuMuonFragment extends Fragment {
         RecyclerView recyclerQLPhieuMuon = view.findViewById(R.id.recyclerQLPhieuMuon);
         FloatingActionButton floatAdd = view.findViewById(R.id.floatAdd);
         // data
-
         PhieuMuonDAO phieuMuonDAO =  new PhieuMuonDAO(getContext());
         ArrayList<PhieuMuon> list = phieuMuonDAO.getDSPhieuMuon();
 
@@ -49,8 +48,6 @@ public class QuanLyPhieuMuonFragment extends Fragment {
             }
         });
         return view;
-
-
     }
 
     private void showDialog() {
@@ -79,8 +76,6 @@ public class QuanLyPhieuMuonFragment extends Fragment {
         });
         AlertDialog alertDialog = builder.create();
         alertDialog.show();
-
-
     }
 
 }

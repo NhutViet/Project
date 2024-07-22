@@ -14,7 +14,6 @@ public class ThanhVien {
     public int getMatv() {
         return matv;
     }
-
     public void setMatv(int matv) {
         this.matv = matv;
     }
@@ -22,7 +21,6 @@ public class ThanhVien {
     public String getHoten() {
         return hoten;
     }
-
     public void setHoten(String hoten) {
         this.hoten = hoten;
     }
@@ -30,7 +28,6 @@ public class ThanhVien {
     public String getNamsinh() {
         return namsinh;
     }
-
     public void setNamsinh(String namsinh) {
         this.namsinh = namsinh;
     }

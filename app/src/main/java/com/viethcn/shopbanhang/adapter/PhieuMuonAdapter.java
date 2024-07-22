@@ -22,7 +22,6 @@ import java.util.ArrayList;
 public class PhieuMuonAdapter extends RecyclerView.Adapter<PhieuMuonAdapter.ViewHold>{
 
     private ArrayList<PhieuMuon> list;
-    private Context context;
 
     public PhieuMuonAdapter(ArrayList<PhieuMuon> list, Context context) {
         this.list = list;
@@ -34,7 +33,6 @@ public class PhieuMuonAdapter extends RecyclerView.Adapter<PhieuMuonAdapter.View
     public ViewHold onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         LayoutInflater inflater = ((Activity)context).getLayoutInflater();
         View view = inflater.inflate(R.layout.item_phieumuon, parent, false);
-
 
         return new ViewHold(view);
     }
