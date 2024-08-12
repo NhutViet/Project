@@ -79,9 +79,6 @@ public class QuanLyPhieuMuonFragment extends Fragment {
         builder.setPositiveButton("Thêm", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
-                // lấy mã thành viên
-
-
                 //Lấy mã sách
 
                 HashMap<String, Object> hsSach = (HashMap<String, Object>) spnSach.getSelectedItem();
@@ -146,6 +143,7 @@ public class QuanLyPhieuMuonFragment extends Fragment {
     private void getDataSach(Spinner spnSach) {
         SachDAO sachDAO = new SachDAO(getContext());
         ArrayList<Sach> list = sachDAO.getDSDauSach();
+        //Khởi tạo một ArrayList chứa các HashMap lưu trữ các thông tin
         ArrayList<HashMap<String, Object>> listHM = new ArrayList<>();
         for (Sach sach : list) {
             HashMap<String, Object> hs = new HashMap<>();
